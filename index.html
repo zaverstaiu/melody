@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Мелодия</title>
+</head>
+<body class="page">
+
+<!-- header -->
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="#">
+        <!-- <object type="image/svg+xml" data="images/logo.svg">Your browser does not support SVGs</object> -->
+        <!-- <img class="logo__img" src="images/logo.png" alt="logo Мелодия"> -->
+        <svg class="logo__img" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15.17 5.904v23.083h3.034V.287h-4.469L9.184 23.206 4.469.287H0v28.7h2.788V6.109l4.756 22.837h3.075L15.17 5.904zM24.7 12.997V3.198h8.61V.287H21.502v28.7H33.31v-2.911H24.7V15.867h7.01v-2.87H24.7zM47.88 3.198v25.789h3.197V.287H39.392l-.779 21.73c-.082 2.747-.533 4.1-3.198 4.1v2.911h.533c4.387-.041 5.617-2.624 5.781-7.175l.656-18.655h5.494zM54.248 22.058c0 4.346 2.173 7.216 6.56 7.216 4.428 0 6.601-2.87 6.601-7.216V7.216C67.41 2.829 65.236 0 60.81 0c-4.388 0-6.56 2.829-6.56 7.216v14.842zm3.157-15.006c0-2.583 1.107-4.141 3.403-4.141 2.337 0 3.403 1.558 3.403 4.141v15.17c0 2.624-1.066 4.141-3.403 4.141-2.296 0-3.403-1.517-3.403-4.141V7.052zM87.69 32.923v-6.765h-2.172V.287H73.997L72.89 21.976c-.082 1.763-.287 3.075-1.271 4.182h-1.845v6.765h3.075v-3.936h11.726v3.936h3.116zM76.95 3.198h5.33v22.96h-7.585c.902-.943 1.189-2.173 1.312-4.223l.943-18.737zM101.149 6.15v22.837h2.87V.287h-3.567L95.86 13.776l-2.542 7.913V.287H90.49v28.7h3.321l4.223-13.243 3.116-9.594zM116.942 16.728v12.259h3.198V.287h-6.396c-4.51 0-6.396 2.296-6.396 6.56v2.337c0 3.157 1.107 5.125 3.526 5.904-2.583.779-3.567 2.911-3.567 5.986v4.469c0 1.271-.082 2.46-.574 3.444h3.239c.369-.82.533-1.558.533-3.485v-4.51c0-3.239 1.517-4.264 4.182-4.264h2.255zm0-13.53v10.619h-2.419c-2.501 0-4.018-.82-4.018-3.936V7.134c0-2.583.943-3.936 3.321-3.936h3.116z" />
+        </svg>
+      </a>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Подобрать<br>квартиру</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Забронировать<br>квартиру</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Ход<br>строительства</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Проектная<br>декларация</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="contacts">
+        <p class="contacts-text">Закажите звонок:</p>
+        <a class="contacts-phone" href="tel:+38(044)1234567">8 (843) 123-45-67</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- /header -->
+
+<!-- main -->
+
+<main class="main">
+  <div class="container">
+    <section class="home">
+      <div class="home__image">
+        <img class="home__image-thumd" src="images/home.jpg" alt="Выбор этажа в новом доме">
+      </div>
+      <div class="home__floors">
+        <h1 class="xlg-title">Выберите желаемый этаж</h1>
+        <div class="home__floors-count">
+          <button class="home__floors-btn">
+            <img class="home__floors-btn-img" src="images/arrow.svg" alt="вверх">
+          </button>
+          <p class="count">07</p>
+          <button class="home__floors-btn home__floors-btn--down">
+            <img class="home__floors-btn-img" src="images/arrow.svg" alt="вниз">
+          </button>
+        </div>
+        <button class="home__floors-button">Смотреть квартиры на этаже</button>
+      </div>
+    </section>
+  </div>
+</main>
+
+<!-- /main -->
+
+<!-- footer -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <a class="logo-f" href="#">
+        <!-- <img class="logo-f__img" src="images/logo-f.png" alt=""> -->
+        <svg class="logo-f__img">
+          <use xlink:href="images/icon.svg#logo-f2"></use>
+        </svg>
+      </a>
+      <div class="contacts f-contacts">
+        <p class="contacts-text">Закажите звонок:</p>
+        <a class="contacts-phone" href="tel:+38(044)1234567">8 (843) 123-45-67</a>
+      </div>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg class="socials-icon">
+              <path d="M11.25 6.875v-2.5c0-.69.56-1.25 1.25-1.25h1.25V0h-2.5A3.75 3.75 0 007.5 3.75v3.125H5V10h2.5v10h3.75V10h2.5L15 6.875h-3.75z" />
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg class="socials-icon">
+              <path
+                d="M13.75 0h-7.5A6.25 6.25 0 000 6.25v7.5A6.25 6.25 0 006.25 20h7.5A6.25 6.25 0 0020 13.75v-7.5A6.25 6.25 0 0013.75 0zm4.375 13.75a4.38 4.38 0 01-4.375 4.375h-7.5a4.38 4.38 0 01-4.375-4.375v-7.5A4.38 4.38 0 016.25 1.875h7.5a4.38 4.38 0 014.375 4.375v7.5z" />
+              <path
+                d="M10 5a5 5 0 100 10 5 5 0 000-10zm0 8.125A3.13 3.13 0 016.875 10 3.129 3.129 0 0110 6.875 3.129 3.129 0 0113.125 10 3.13 3.13 0 0110 13.125zm5.375-7.834a.666.666 0 100-1.332.666.666 0 000 1.332z" />
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg class="socials-icon">
+              <path
+                d="M20 3.799a8.549 8.549 0 01-2.363.647 4.077 4.077 0 001.804-2.266 8.192 8.192 0 01-2.6.992A4.099 4.099 0 009.75 5.976c0 .325.027.638.095.935-3.409-.166-6.425-1.8-8.451-4.288A4.128 4.128 0 00.83 4.694c0 1.42.732 2.679 1.821 3.407A4.05 4.05 0 01.8 7.597v.045a4.119 4.119 0 003.285 4.03 4.09 4.09 0 01-1.075.134c-.262 0-.527-.015-.776-.07.531 1.624 2.038 2.818 3.831 2.856a8.238 8.238 0 01-5.084 1.75A7.67 7.67 0 010 16.284a11.543 11.543 0 006.29 1.84c7.545 0 11.67-6.25 11.67-11.668 0-.18-.006-.356-.015-.53A8.179 8.179 0 0020 3.8z" />
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg class="socials-icon">
+              <path
+                d="M19.15 4.45c-.542-.965-1.131-1.143-2.33-1.21-1.197-.081-4.209-.115-6.818-.115-2.613 0-5.626.034-6.822.114-1.196.069-1.786.245-2.334 1.211C.288 5.414 0 7.074 0 9.996v.01c0 2.91.287 4.583.846 5.537.548.965 1.136 1.14 2.333 1.22 1.197.07 4.21.112 6.823.112 2.61 0 5.62-.041 6.82-.11 1.198-.081 1.787-.256 2.33-1.221.563-.954.848-2.627.848-5.537v-.006-.003c0-2.924-.285-4.584-.85-5.548zM7.5 13.75v-7.5L13.75 10 7.5 13.75z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="footer-links">
+        <a class="policy-link link-hov" href="#">Политика конфиденциальности</a>
+        <a class="offer-link link-hov" href="#">Публичная оферта</a>
+        <a class="contacts-link link-hov" href="#">Контакты</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- /footer -->
+</body>
+</html>
