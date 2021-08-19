@@ -1,5 +1,6 @@
 :root {
   --text-c: #635854;
+  --disabled: #978f8c;
   --text-light-c: #fff;
   --footer-bg: #d7d7d7;
   --accent-c: #3596f5;
@@ -29,9 +30,12 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+a.disabled {
+	pointer-events: none;
+  color: var(--disabled);
+}
 
-ul,
-li {
+ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -91,6 +95,7 @@ button {
 	font-size: 2.31rem;
 	font-weight: 400;
 	line-height: 1.33;
+  color: var(--text-c);
 }
 
 /* header */
@@ -218,6 +223,33 @@ path.current-floor {
 }
 
 /* /home */
+
+/* info */
+
+.info {
+  height: 77vh;
+  padding: 0 100px;
+  overflow: auto;
+}
+.info::-webkit-scrollbar {
+	width: 0;
+}
+.info ol {
+  padding: 0 50px;
+}
+.info__title {
+  padding-top: 1.355em;
+  text-align: center;
+}
+.info__lg-title {
+	font-family: 'bebas', 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	color: var(--text-c);
+}
+
+/* /info */
 
 /* /main */
 
