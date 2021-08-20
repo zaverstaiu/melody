@@ -4,6 +4,9 @@ $(function () {
   counterUp = $('.counter-btn--up');  // нашли кнопку вверх
   counterDown = $('.counter-btn--down'); // нашли кнопку вниз
   floorPath = $('.home__image-thumb path'); // нашли отдельный этаж в svg
+  modal = $('.modal'); // нашли модальное окно
+  modalBtn = $('.modal-btn'); // нашли кнопку закрытия окна
+  homeFloorsButton = $('.home__floors-button');
 
   // наведение мыши на этаж
   floorPath.on('mouseover', function () {
@@ -36,5 +39,13 @@ $(function () {
       $(`[data-num = ${uscurrentFloor}]`).toggleClass('current-floor');
     }
   });
+
+  floorPath.on('click', toggleModal);
+  modalBtn.on('click', toggleModal);
+  homeFloorsButton.on('click', toggleModal);
+  // функция открытия-закрытия модального окна
+  function toggleModal() {
+    modal.toggleClass('is-open');
+  }
 
 });

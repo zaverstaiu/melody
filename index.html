@@ -11,6 +11,61 @@
 </head>
 <body class="page">
 
+<!-- modal -->
+
+<div class="modal">
+  <div class="modal__body">
+    <button class="modal-btn">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 2L26 26" stroke="#3596F5" stroke-width="3" />
+        <path d="M26 2L2 26" stroke="#3596F5" stroke-width="3" />
+      </svg>
+    </button>
+    <div class="modal-flats">
+      <h3 class="md-title modal-flats__title">Этаж<span class="modal-count count">7</span></h3>
+      <svg class="modal-flats__img" width="433" height="408" viewBox="0 0 433 408" fill="none" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <image id="image0" width="433" height="408" xlink:href="images/flats.png" />
+        <path d="M45.5 81V114.5H125.5V144H164.5V131H183V32.5H92.5V16H28.5V81H45.5Z" fill="#3595F6" fill-opacity="0.75" />
+        <path d="M124.729 116H46V198H167V145.178H124.729V116Z" fill="#3595F6" fill-opacity="0.75" />
+        <path d="M45.5 200.5V271.5V273.5H118.5V250H165.5V200.5H45.5Z" fill="#3595F6" fill-opacity="0.75" />
+        <path d="M120.5 276H45.5V328H28V393H93.5V375.5H137V308.5H162V275H166.5V253H120.5V276Z" fill="#3595F6"
+          fill-opacity="0.75" />
+        <path d="M174.5 377V394.5H215.5V263H187V276.5H166.5V311H139V377H174.5Z" fill="#3595F6" fill-opacity="0.75" />
+        <path d="M218 394.5H260.5V376H294V309H265.5V273.5H246V263H218V394.5Z" fill="#3595F6" fill-opacity="0.75" />
+        <path
+          d="M313.5 253H266.5V273.5H268.5V308.5H296.5V376H340.5V393C340.5 394.2 383.5 393.5 405 393V327.5H387.5V268.5H313.5V253Z"
+          fill="#3595F6" fill-opacity="0.75" />
+        <path d="M316.5 266.5H388V205.5H368V202H267V252H316.5V266.5Z" fill="#3595F6" fill-opacity="0.75" />
+        <path d="M371.5 204H388.5V142H315V150.5H266.5V200H371.5V204Z" fill="#3595F6" fill-opacity="0.75" />
+        <path d="M266.5 148H313.5V139.5H388V81H404.5V16.5H340.5V33.5H246.5V133H266.5V148Z" fill="#3595F6"
+          fill-opacity="0.75" />
+      </svg>
+
+
+    </div>
+    <div class="modal-info">
+      <h3 class="md-title modal-info__title">Выберите квартиру</h3>
+      <ul class="modal-info__list">
+        <li class="modal-info__item"><a class="modal-info__link" href="#">кв. 40, 2 комн. 64,5 кв. м.</a></li>
+        <li class="modal-info__item"><a class="modal-info__link" href="#">кв. 41, 1 комн. 38,9 кв. м.</a></li>
+        <li class="modal-info__item"><a class="modal-info__link" href="#">кв. 42, 1 комн. 38,9 кв. м.</a></li>
+        <li class="modal-info__item"><a class="modal-info__link" href="#">кв. 43, 2 комн. 56 кв. м.</a></li>
+        <li class="modal-info__item"><a class="modal-info__link" href="#">кв. 44, 1 комн. 35,8 кв. м.</a></li>
+        <li class="modal-info__item"><a class="modal-info__link" href="#">кв. 45, 1 комн. 35,8 кв. м.</a></li>
+        <li class="modal-info__item"><a class="modal-info__link" href="#">кв. 46, 2 комн. 58,4 кв. м.</a></li>
+        <li class="modal-info__item"><a class="modal-info__link" href="#">кв. 47, 1 комн. 32,3 кв. м.</a></li>
+        <li class="modal-info__item"><a class="modal-info__link" href="#">кв. 48, 1 комн. 29,9 кв. м.</a></li>
+        <li class="modal-info__item"><a class="modal-info__link" href="#">кв. 49, 3 комн. 75,2 кв. м.</a></li>
+      </ul>
+      <p class="modal-info__text">
+        Квартиры, отмеченные серым, уже выкуплены
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- /modal -->
 <!-- header -->
 <header class="header">
   <div class="container">
@@ -89,9 +144,9 @@
           <button class="home__floors-btn counter-btn--up">
             <img class="home__floors-btn-img" src="images/arrow.svg" alt="вверх">
           </button>
-          <p class="count">07</p>
+          <p class="floors-count count">07</p>
           <button class="home__floors-btn counter-btn--down">
-            <img class="home__floors-btn-img" src="images/arrow.svg" alt="вниз">
+            <img class="home__floors-btn-img" src="images/arrow-down.svg" alt="вниз">
           </button>
         </div>
         <button class="home__floors-button">Смотреть квартиры на этаже</button>
@@ -161,6 +216,8 @@
 </footer>
 
 <!-- /footer -->
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/main.js"></script>
