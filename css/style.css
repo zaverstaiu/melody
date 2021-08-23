@@ -156,12 +156,6 @@ button {
 .modal-flats__img path:hover {
   opacity: 1;
 }
-.modal-flats__img path {
-  opacity: 0;
-}
-.modal-flats__img path:hover {
-  opacity: 1;
-}
 .modal-info {
   max-width: 40%;
   padding: 3.125em;

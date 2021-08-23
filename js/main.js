@@ -7,8 +7,6 @@ $(document.onload=function() {
   modal = $('.modal'); // модальное окно
   modalBtn = $('.modal-btn'); // кнопку закрытия окна
   homeFloorsButton = $('.home__floors-button'); // кнопка открытия окна
-  flats = $('.modal-flats__img');
-
 
   // наведение мыши на этаж
   floorPath.on('mouseover', function () {
@@ -45,10 +43,6 @@ $(document.onload=function() {
   floorPath.on('click', toggleModal);
   modalBtn.on('click', toggleModal);
   homeFloorsButton.on('click', toggleModal);
-
-  flats.on('click', function () {
-    
-  });
 
   // функция открытия-закрытия модального окна
   function toggleModal() {
