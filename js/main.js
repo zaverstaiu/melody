@@ -1,12 +1,14 @@
-$(function () {
+$(document.onload=function() {
 
   let currentFloor = 2; // хранение текущего этажа
-  counterUp = $('.counter-btn--up');  // нашли кнопку вверх
-  counterDown = $('.counter-btn--down'); // нашли кнопку вниз
-  floorPath = $('.home__image-thumb path'); // нашли отдельный этаж в svg
-  modal = $('.modal'); // нашли модальное окно
-  modalBtn = $('.modal-btn'); // нашли кнопку закрытия окна
-  homeFloorsButton = $('.home__floors-button');
+  counterUp = $('.counter-btn--up');  // кнопку вверх
+  counterDown = $('.counter-btn--down'); // кнопку вниз
+  floorPath = $('.home__image-thumb path'); // отдельный этаж в svg
+  modal = $('.modal'); // модальное окно
+  modalBtn = $('.modal-btn'); // кнопку закрытия окна
+  homeFloorsButton = $('.home__floors-button'); // кнопка открытия окна
+  flats = $('.modal-flats__img');
+
 
   // наведение мыши на этаж
   floorPath.on('mouseover', function () {
@@ -43,9 +45,15 @@ $(function () {
   floorPath.on('click', toggleModal);
   modalBtn.on('click', toggleModal);
   homeFloorsButton.on('click', toggleModal);
+
+  flats.on('click', function () {
+    
+  });
+
   // функция открытия-закрытия модального окна
   function toggleModal() {
     modal.toggleClass('is-open');
   }
+
 
 });

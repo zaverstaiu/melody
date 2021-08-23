@@ -146,6 +146,16 @@ button {
 .modal-flats__title {
   margin-bottom: 1.08em;
 }
+.modal-flats__img {
+  width: 433px;
+  height: 408px;
+}
+.modal-flats__img path {
+  opacity: 0;
+}
+.modal-flats__img path:hover {
+  opacity: 1;
+}
 .modal-flats__img path {
   opacity: 0;
 }
