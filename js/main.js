@@ -1,4 +1,4 @@
-$(document.onload=function() {
+$(function() {
 
   let currentFloor = 2; // хранение текущего этажа
   counterUp = $('.counter-btn--up');  // кнопку вверх
